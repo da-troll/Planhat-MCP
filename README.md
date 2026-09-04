@@ -7,17 +7,25 @@
 [![MCP](https://img.shields.io/badge/MCP-compatible-8A2BE2.svg)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+<p align="center">
+  <img src="assets/icon.png" alt="Planny, the Planhat MCP mascot" width="180">
+</p>
+
 **Talk to your Planhat customer data in plain English.**
 
 Struggling to make Planhat's hosted MCP work? Custom connector in Claude that won't connect, or an OAuth login that never completes once it does? 
 
 Here's your answer: a [Model Context Protocol](https://modelcontextprotocol.io) server for [Planhat](https://www.planhat.com) that runs on your own machine and authenticates with a plain API token. No OAuth flow, no connector setup, nothing to host. Add it to Claude Desktop or any other MCP client and ask for what you need:
 
+<br>
+
 > *"Which companies have licenses renewing this quarter?"*
 > 
 > *"Create a task for me to follow up with Acme Corp next week."*
 > 
 > *"Summarize the open tickets for our top five accounts."*
+
+<br>
 
 Claude reads and updates Planhat directly, live from the conversation. No dashboards, no exports, no SQL.
 
