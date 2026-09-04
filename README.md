@@ -1,15 +1,18 @@
 <div align="center">
-  <h1><img src="assets/icon.png" width="112" height="112" align="center" alt="Planny, the Planhat MCP mascot"> Planhat MCP</h1>
-  <h3>Talk to your Planhat customer data in plain English.</h3>
+  <img src="assets/icon.png" width="80" height="80" alt="Planhat MCP Logo">
+  <h1>Planhat MCP</h1>
+  <p><strong>Talk to your Planhat customer data in plain English.</strong></p>
   <p>A local Model Context Protocol server with 60 tools for reading and updating Planhat from your AI client.</p>
   <p>
-    <a href="https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/da-troll/Planhat-MCP/ci.yml?branch=main&amp;style=flat-square&amp;label=CI&amp;color=5965f2" alt="CI status"></a>
+    <a href="https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/da-troll/Planhat-MCP/ci.yml?branch=main&amp;style=flat-square&amp;label=CI&amp;color=2ea44f" alt="CI status"></a>
     <a href="https://github.com/da-troll/Planhat-MCP/releases"><img src="https://img.shields.io/github/v/release/da-troll/Planhat-MCP?style=flat-square&amp;color=5965f2" alt="Latest release"></a>
     <a href="package.json"><img src="https://img.shields.io/badge/node-18%2B-5965f2?style=flat-square" alt="Node 18 or newer"></a>
     <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-compatible-5965f2?style=flat-square" alt="MCP compatible"></a>
     <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5965f2?style=flat-square" alt="MIT license"></a>
   </p>
 </div>
+
+---
 
 > **Why this exists:** When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
 
