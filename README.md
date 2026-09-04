@@ -12,7 +12,11 @@
   <p>A local Model Context Protocol server with 60 tools for reading and updating Planhat from your AI client.</p>
 </div>
 
-> **Why this exists:** When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
+---
+
+> [!TIP]
+> **Why this exists**
+> When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
 
 ### See it in action
 
