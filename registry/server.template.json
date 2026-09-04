@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.da-troll/planhat-mcp",
+  "title": "Planhat MCP",
+  "description": "Connect Planhat CRM to Claude and other MCP clients with 60 local tools across 12 resource types.",
+  "version": "0.0.0",
+  "repository": {
+    "url": "https://github.com/da-troll/Planhat-MCP",
+    "source": "github",
+    "id": "1292148192"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/da-troll/Planhat-MCP/releases/download/v0.0.0/planhat-mcp.mcpb",
+      "fileSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

@@ -120,7 +120,9 @@ These are the traps that produced real bugs in this codebase's history:
   bundle on the public release page containing `.env` would leak a live token.
 - Releases: bump the version in `package.json` **and** `manifest.json`, update
   CHANGELOG, tag `vX.Y.Z`; the release workflow refuses to publish on any version
-  mismatch and attaches `planhat-mcp.mcpb` plus its SHA-256 checksum to the release.
+  mismatch, attaches `planhat-mcp.mcpb` plus its SHA-256 checksum to the release,
+  and publishes generated metadata from `registry/server.template.json` to the
+  official MCP Registry using GitHub OIDC.
 - Claude Desktop runs node-type bundles with its own built-in Node (Electron's
   embedded runtime, currently Node 24). There is no bundled Python or uv; that is why
   this project is Node rather than Python.
