@@ -1,35 +1,25 @@
-# Planhat MCP
+<div align="center">
+  <h1><img src="assets/icon.png" width="112" height="112" align="center" alt="Planny, the Planhat MCP mascot"> Planhat MCP</h1>
+  <h3>Talk to your Planhat customer data in plain English.</h3>
+  <p>A local Model Context Protocol server with 60 tools for reading and updating Planhat from your AI client.</p>
+  <p>
+    <a href="https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/da-troll/Planhat-MCP/ci.yml?branch=main&amp;style=flat-square&amp;label=CI&amp;color=5965f2" alt="CI status"></a>
+    <a href="https://github.com/da-troll/Planhat-MCP/releases"><img src="https://img.shields.io/github/v/release/da-troll/Planhat-MCP?style=flat-square&amp;color=5965f2" alt="Latest release"></a>
+    <a href="package.json"><img src="https://img.shields.io/badge/node-18%2B-5965f2?style=flat-square" alt="Node 18 or newer"></a>
+    <a href="https://modelcontextprotocol.io"><img src="https://img.shields.io/badge/MCP-compatible-5965f2?style=flat-square" alt="MCP compatible"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-5965f2?style=flat-square" alt="MIT license"></a>
+  </p>
+</div>
 
-[![CI](https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml/badge.svg)](https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml)
-[![Release](https://github.com/da-troll/Planhat-MCP/actions/workflows/release.yml/badge.svg)](https://github.com/da-troll/Planhat-MCP/actions/workflows/release.yml)
-[![Latest release](https://img.shields.io/github/v/release/da-troll/Planhat-MCP)](https://github.com/da-troll/Planhat-MCP/releases)
-[![Node 18+](https://img.shields.io/badge/node-18%2B-brightgreen.svg)](package.json)
-[![MCP](https://img.shields.io/badge/MCP-compatible-8A2BE2.svg)](https://modelcontextprotocol.io)
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+> **Why this exists:** When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
 
-<p align="center">
-  <img src="assets/icon.png" alt="Planny, the Planhat MCP mascot" width="180">
-</p>
+### See it in action
 
-**Talk to your Planhat customer data in plain English.**
+> **You:** "Which companies have licenses renewing this quarter?"
+>
+> **Claude:** Queries Planhat through the local MCP server and returns the matching companies with their renewal details.
 
-Struggling to make Planhat's hosted MCP work? Custom connector in Claude that won't connect, or an OAuth login that never completes once it does? 
-
-Here's your answer: a [Model Context Protocol](https://modelcontextprotocol.io) server for [Planhat](https://www.planhat.com) that runs on your own machine and authenticates with a plain API token. No OAuth flow, no connector setup, nothing to host. Add it to Claude Desktop or any other MCP client and ask for what you need:
-
-<br>
-
-> *"Which companies have licenses renewing this quarter?"*
-> 
-> *"Create a task for me to follow up with Acme Corp next week."*
-> 
-> *"Summarize the open tickets for our top five accounts."*
-
-<br>
-
-Claude reads and updates Planhat directly, live from the conversation. No dashboards, no exports, no SQL.
-
-It runs entirely on your own computer, with your own Planhat API token. No third-party service sits between your AI and your customer data.
+Ask Claude to list records, inspect customer context, create follow-up tasks, or update Planhat directly from the conversation.
 
 ## Install in Claude Desktop
 
@@ -53,7 +43,10 @@ shasum -a 256 -c planhat-mcp.mcpb.sha256
 
 > **Switching from a manual install?** Remove the old `planhat` entry from `claude_desktop_config.json` first, or you'll see two copies of every tool.
 
-## Manual install (Cursor and other MCP clients)
+## Manual install
+
+<details>
+<summary><strong>Build from source for Cursor and other MCP clients</strong></summary>
 
 For MCP clients other than Claude Desktop, or if you prefer running from a checkout. Requires [Node.js](https://nodejs.org) 18 or newer.
 
@@ -89,6 +82,8 @@ The token stays in that one file on your machine. Treat it like a password.
 ```
 
 Restart the client and test with the same question as above.
+
+</details>
 
 ## What Claude can do with it
 
