@@ -14,11 +14,8 @@
 
 ---
 
-## Why this exists
-
-When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
-
----
+> [!NOTE]
+> **Why this exists:** When hosted connector OAuth or custom connector setup gets in the way, Planhat MCP gives you a direct local connection using a standard API token. Nothing to host and no third-party service between your AI and customer data.
 
 ### See it in action
 
