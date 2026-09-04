@@ -1,6 +1,6 @@
 {
   "name": "planhat-mcp",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Local MCP server that connects Planhat CRM to Claude and any MCP client: 60 tools across 12 resource types",
   "license": "MIT",
   "type": "module",

@@ -3,6 +3,12 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [SemVer](https://semver.org/).
 
+## [2.0.2] - 2026-09-05
+
+### Changed
+- Replaced the extension icon with Planny.
+- Refined the README header, value proposition and installation presentation.
+
 ## [2.0.1] - 2026-09-04
 
 ### Added
