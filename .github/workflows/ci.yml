@@ -27,10 +27,10 @@ jobs:
         run: |
           npx -y @anthropic-ai/mcpb@2.1.2 pack . planhat-mcp.mcpb
           actual=$(unzip -Z1 planhat-mcp.mcpb | sort)
-          expected=$(printf 'LICENSE\nREADME.md\ndist/server.js\nmanifest.json\n' | sort)
+          expected=$(printf 'LICENSE\nREADME.md\nassets/icon.png\ndist/server.js\nmanifest.json\n' | sort)
           if [ "$actual" != "$expected" ]; then
             echo "::error::Bundle contents drifted from the allowlist"
             diff <(echo "$expected") <(echo "$actual") || true
             exit 1
           fi
-          echo "Bundle contains exactly the 4 allowlisted files"
+          echo "Bundle contains exactly the 5 allowlisted files"

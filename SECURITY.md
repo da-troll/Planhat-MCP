@@ -31,5 +31,5 @@
 
 ## Reporting a vulnerability
 
-Open a [GitHub security advisory](https://github.com/da-troll/planhat-mcp/security/advisories/new)
+Open a [GitHub security advisory](https://github.com/da-troll/Planhat-MCP/security/advisories/new)
 or a private issue. Please do not disclose token-leak vectors publicly before a fix.

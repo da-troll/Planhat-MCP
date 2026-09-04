@@ -1,8 +1,8 @@
 # Planhat MCP
 
-[![CI](https://github.com/da-troll/planhat-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/da-troll/planhat-mcp/actions/workflows/ci.yml)
-[![Release](https://github.com/da-troll/planhat-mcp/actions/workflows/release.yml/badge.svg)](https://github.com/da-troll/planhat-mcp/actions/workflows/release.yml)
-[![Latest release](https://img.shields.io/github/v/release/da-troll/planhat-mcp)](https://github.com/da-troll/planhat-mcp/releases)
+[![CI](https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml/badge.svg)](https://github.com/da-troll/Planhat-MCP/actions/workflows/ci.yml)
+[![Release](https://github.com/da-troll/Planhat-MCP/actions/workflows/release.yml/badge.svg)](https://github.com/da-troll/Planhat-MCP/actions/workflows/release.yml)
+[![Latest release](https://img.shields.io/github/v/release/da-troll/Planhat-MCP)](https://github.com/da-troll/Planhat-MCP/releases)
 [![Node 18+](https://img.shields.io/badge/node-18%2B-brightgreen.svg)](package.json)
 [![MCP](https://img.shields.io/badge/MCP-compatible-8A2BE2.svg)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
@@ -27,13 +27,21 @@ It runs entirely on your own computer, with your own Planhat API token. No third
 
 Download one file, double-click it, paste your token. No terminal, no config files, no code, and nothing to install first.
 
-1. [Download the .mcpb file](https://github.com/da-troll/planhat-mcp/releases/latest/download/planhat-mcp.mcpb).
+1. [Download the .mcpb file](https://github.com/da-troll/Planhat-MCP/releases/latest/download/planhat-mcp.mcpb).
 2. Double-click the downloaded file. Claude Desktop opens an install pop-up.
 3. Review the pop-up and click **Install**.
 4. Create a Planhat API token if you don't have one: in Planhat, go to **Settings > Service Accounts (Private Apps) > API Access Token**. Admin access is required.
 5. Paste the token into the token field. It is stored in your system keychain, never in a file on disk.
 6. Optional: tick **Read-only mode** or **Disable delete tools** to limit what the AI can do.
 7. Ask Claude: *"List my top 3 Planhat companies."* An answer means you are done.
+
+If double-clicking does not open Claude Desktop, use **Settings > Extensions > Advanced settings > Install Extension** and select the downloaded file.
+
+Each release also includes `planhat-mcp.mcpb.sha256`. To verify a download on macOS or Linux, place both files in the same directory and run:
+
+```bash
+shasum -a 256 -c planhat-mcp.mcpb.sha256
+```
 
 > **Switching from a manual install?** Remove the old `planhat` entry from `claude_desktop_config.json` first, or you'll see two copies of every tool.
 
@@ -44,7 +52,7 @@ For MCP clients other than Claude Desktop, or if you prefer running from a check
 **1. Get the code and build the server:**
 
 ```bash
-git clone https://github.com/da-troll/planhat-mcp.git ~/planhat-mcp
+git clone https://github.com/da-troll/Planhat-MCP.git ~/planhat-mcp
 cd ~/planhat-mcp
 npm install
 npm run build
@@ -137,7 +145,7 @@ planhat-mcp/
     └── release.yml            ← GitHub release with .mcpb asset on version tags
 ```
 
-The shipped bundle contains just four files: `manifest.json`, `dist/server.js` (one dependency-free build), `LICENSE` and `README.md`.
+The shipped bundle contains just five files: `manifest.json`, `dist/server.js` (one dependency-free build), `assets/icon.png`, `LICENSE` and `README.md`.
 
 ## Troubleshooting
 

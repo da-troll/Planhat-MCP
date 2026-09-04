@@ -1,11 +1,14 @@
-# Ship exactly four files: manifest.json, dist/server.js (esbuild single-file
-# build with all dependencies inlined), LICENSE and README.md. This is an
+# Ship exactly five files: manifest.json, dist/server.js (esbuild single-file
+# build with all dependencies inlined), assets/icon.png, LICENSE and README.md. This is an
 # allowlist: deny everything at the root, then re-include only what ships. It
 # cannot be defeated by stray build artifacts, caches, secrets or new files.
 /*
 !/manifest.json
 !/LICENSE
 !/README.md
+!/assets
+/assets/*
+!/assets/icon.png
 !/dist
 /dist/*
 !/dist/server.js

@@ -3,6 +3,16 @@
 All notable changes to this project are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: [SemVer](https://semver.org/).
 
+## [2.0.1] - 2026-09-04
+
+### Added
+- A bundled extension icon for a polished Claude Desktop install experience.
+- SHA-256 checksum files alongside `.mcpb` release assets.
+
+### Changed
+- Updated transitive dependencies to resolve all reported npm advisories.
+- Canonicalized repository links after the GitHub repository rename.
+
 ## [2.0.0] - 2026-07-07
 
 Rewritten in TypeScript so the one-click install needs no prerequisites at all.

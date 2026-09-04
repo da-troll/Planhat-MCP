@@ -112,14 +112,15 @@ These are the traps that produced real bugs in this codebase's history:
 - `manifest.json` defines the bundle: `server.type: "node"`, command `node` against
   `dist/server.js`, the token as a `sensitive` user_config field (keychain-stored),
   and the two gates as boolean checkboxes.
-- The bundle ships **exactly four files**: `manifest.json`, `dist/server.js`,
-  `LICENSE`, `README.md`. `.mcpbignore` enforces this as an allowlist (deny `/*`, then
-  re-include only those four), and both `ci.yml` and `release.yml` verify the packed
+- The bundle ships **exactly five files**: `manifest.json`, `dist/server.js`,
+  `assets/icon.png`, `LICENSE`, `README.md`. `.mcpbignore` enforces this as an
+  allowlist (deny `/*`, then re-include only those five), and both `ci.yml` and
+  `release.yml` verify the packed
   contents against that exact list (duplicated; update both). Never weaken this: a
   bundle on the public release page containing `.env` would leak a live token.
 - Releases: bump the version in `package.json` **and** `manifest.json`, update
   CHANGELOG, tag `vX.Y.Z`; the release workflow refuses to publish on any version
-  mismatch and attaches `planhat-mcp.mcpb` to the release.
+  mismatch and attaches `planhat-mcp.mcpb` plus its SHA-256 checksum to the release.
 - Claude Desktop runs node-type bundles with its own built-in Node (Electron's
   embedded runtime, currently Node 24). There is no bundled Python or uv; that is why
   this project is Node rather than Python.
