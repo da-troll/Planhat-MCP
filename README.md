@@ -48,9 +48,6 @@ shasum -a 256 -c planhat-mcp.mcpb.sha256
 
 ## Manual install
 
-<details>
-<summary><strong>Build from source for Cursor and other MCP clients</strong></summary>
-
 For MCP clients other than Claude Desktop, or if you prefer running from a checkout. Requires [Node.js](https://nodejs.org) 18 or newer.
 
 **1. Get the code and build the server:**
@@ -85,8 +82,6 @@ The token stays in that one file on your machine. Treat it like a password.
 ```
 
 Restart the client and test with the same question as above.
-
-</details>
 
 ## What Claude can do with it
 
